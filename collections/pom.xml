@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.zmh.demo</groupId>
+    <artifactId>collections</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <packaging>jar</packaging>
+
+    <properties>
+        <pms.version>1.0.0-SNAPSHOT</pms.version>
+        <lombok.version>1.18.2</lombok.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.yuxiaor.pms</groupId>
+            <artifactId>pms-applib</artifactId>
+            <version>${pms.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yuxiaor.pms</groupId>
+            <artifactId>pms-testlib</artifactId>
+            <version>${pms.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.yuxiaor.pms</groupId>
+            <artifactId>pms-ddd</artifactId>
+            <version>${pms.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yuxiaor.pms</groupId>
+            <artifactId>pms-apilib</artifactId>
+            <version>${pms.version}</version>
+        </dependency>
+        <!--https://mvnrepository.com/artifact/org.projectlombok/lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.reactivex.rxjava2</groupId>
+            <artifactId>rxjava</artifactId>
+            <version>2.2.7</version>
+        </dependency>
+    </dependencies>
+    
+</project>
